@@ -15,6 +15,7 @@ class UnitTestLadderGame: XCTestCase {
     var inputView : InputView!
     var gameOption : GameOption!
     
+    
     func testHeight () {
         let playerNames = ["Cat","Fox","Dog","Bird","Tiger"]
         let ladderHeight = 4
@@ -50,6 +51,16 @@ class UnitTestLadderGame: XCTestCase {
             }
         }
     XCTAssertEqual(count, 16)
+    }
+    
+    func testException() {
+        let playerNames: String? = ""
+        let ladderHeight: String? = ""
+        let inputValue = (playerNames, ladderHeight)
+       var checkingInput = CheckingInput()
+        do { try checkingInput.checkValidInput(inputValue) }
+        
+        catch { XCTAssertThrowsError(try checkingInput.checkValidInput(inputValue)) }
     }
     
 

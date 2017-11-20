@@ -12,6 +12,7 @@
 		E818313E1FB7441A0010758C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EDEC8E1FB035F700D80646 /* ResultView.swift */; };
 		E818313F1FB7441E0010758C /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EDEC8A1FB035CE00D80646 /* InputView.swift */; };
 		E81831401FB744270010758C /* LadderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846A57F1FB6F7A500152BE1 /* LadderInfo.swift */; };
+		E842E1C91FBED2A500EC5ACC /* ChekingInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88211991FBC86750009A2B1 /* ChekingInput.swift */; };
 		E846A57E1FB6ECF400152BE1 /* GameOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846A57D1FB6ECF400152BE1 /* GameOption.swift */; };
 		E846A5801FB6F7A500152BE1 /* LadderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846A57F1FB6F7A500152BE1 /* LadderInfo.swift */; };
 		E84993411FB546A100BAD7F6 /* UnitTestLadderGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84993401FB546A100BAD7F6 /* UnitTestLadderGame.swift */; };
@@ -222,6 +223,7 @@
 				E818313F1FB7441E0010758C /* InputView.swift in Sources */,
 				E818313D1FB744150010758C /* GameOption.swift in Sources */,
 				E81831401FB744270010758C /* LadderInfo.swift in Sources */,
+				E842E1C91FBED2A500EC5ACC /* ChekingInput.swift in Sources */,
 				E84993461FB58A0100BAD7F6 /* LadderGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

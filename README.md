@@ -20,3 +20,7 @@
 - 11.10 step4 미션 내용에 따른 수정 - UnitTestLadderGame 추가하고 LadderGame과 LadderPlayer객체에 대해 유닛테스트 추가
 - 11.11 step4 PR코멘트에 따른 수정 - Data Object추가, 유닛테스트 코드 변경 : "로직이 있는 객체끼리 의존적이지 않도록" Data Object를 만듦 (GameOption, LadderInfo), 특히 ResultView에서 사다리 중간 수평bar를 출력할때마다 LadderGame객체의 함수에 접근하던 방식을 바꿔서 `Array<Array<Bool>>`타입을 LadderInfo의 속성값으로 선언, ResultView는 LadderInfo Data Object에만 접근하는 방식으로 개선.
 - 11.13 ~ 15 step4 PR코멘트에 따른 수정 - InputView에서 튜플을 리턴하는 방식을 바꿔서 바로 GameOption Data Object를 만들어 리턴하는 방식으로 변경. InputView에서 예외의 값을 입력받았을때의 에러처리, LadderGame의 RandomBar생성 부분에서 사다리 수평선이 연속해서 같은 높이에 생기지 않도록 로직 추가, 유닛테스트 코드 수정
+- 11.16 부족한 부분 보완
+    - CheckingInput객체 추가: InputView에서 바로 에러처리를 하던 것에서 분리하여 CheckingInput객체에서 에러핸들링하도록 로직 분리. InputView는 사용자에게 값만 입력받고 CheckingInput에게 옵셔널 값만 넘김.
+    - 에러 핸들링하는 부분 유닛테스트 추가. testException()함수에서 XCTAssertThrowsError() 사용
+
